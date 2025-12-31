@@ -9,11 +9,11 @@ seeds=(
     64
 )
 model_paths=(
-    "Qwen/Qwen3-30B-A3B-Thinking-2507"
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
 )
 
 datasets=(
-    "aime25"
+    "MATH500"
 )
 
 for seed in "${seeds[@]}"; do

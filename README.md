@@ -275,4 +275,4 @@ This implementation supports research in:
 
 If you use this code or ideas, please cite the CREST paper:
 
-*Understanding and Steering Cognitive Reasoning in LLMs at Test-time (CREST), under review at ICLR 2026.*
+*Understanding and Steering The Cognitive Behaviors of Reasoning Models At Test-Time (CREST)*

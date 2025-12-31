@@ -25,24 +25,12 @@ seeds=(
 )
 
 model_paths=(
-    "Qwen/Qwen3-30B-A3B-Thinking-2507"
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
 )
-    # deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
-    # deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
-    # deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-    # Qwen/Qwen3-4B-Thinking-2507
-    # openai/gpt-oss-20b
-    
+
 datasets=(
-    "aime25"
+    "MATH500"
 )
-    # "AIME"
-    # "amc23"
-    # "cp"
-    # "lcb"
-    # "MATH500"
-    # "GSM"
-    # "gpqa"
 
 for seed in "${seeds[@]}"; do
     for model_path in "${model_paths[@]}"; do
