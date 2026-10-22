@@ -34,7 +34,7 @@ cryptography==50.0.0
 cufile-python==0.1.1
 cupy-cuda12x==13.6.0
 DataProperty==1.1.0
-datasets==3.5.0
+datasets==5.0.1
 dbus-python==1.2.18
 deep_gemm @ file:///vllm-workspace/deepgemm/dist/deep_gemm-2.0.0+7b6b556-cp312-cp312-linux_x86_64.whl
 depyf==0.19.0
@@ -54,7 +54,7 @@ fastrlock==0.8.3
 filelock==3.19.1
 flashinfer-python @ file:///vllm-workspace/flashinfer
 frozenlist==1.7.0
-fsspec==2024.12.0
+fsspec==2026.6.0
 gguf==0.17.1
 gitdb==4.0.12
 GitPython==3.1.60
@@ -156,7 +156,7 @@ pydantic-settings==2.15.0
 pydantic_core==2.33.2
 Pygments==2.19.2
 PyGObject==3.42.1
-PyJWT==2.14.0
+PyJWT==2.15.0
 pyparsing==3.1.0
 pytablewriter==1.2.1
 python-apt==2.4.0+ubuntu4
