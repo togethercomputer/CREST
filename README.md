@@ -28,7 +28,7 @@ cd ..
 pip install -r requirements.txt 
 cd ../../
 pip install lighteval
-pip install datasets==3.5.0
+pip install datasets==5.0.1
 pip install emoji
 ```
 
@@ -44,7 +44,7 @@ cd ..
 pip install -r requirements.txt 
 cd ../../
 pip install lighteval
-pip install datasets==3.5.0
+pip install datasets==5.0.1
 pip install emoji
 ```
 

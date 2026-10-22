@@ -28,7 +28,7 @@ import evaluate
 import argparse
 
 from collections import Counter
-from datasets import load_dataset, Dataset
+from datasets import load_dataset, Dataset, Features, Value
 from functools import partial
 
 
@@ -269,7 +269,13 @@ def main(args):
             })
     elif args.dataset == "lcb":
         data = "livecodebench/code_generation_lite"
-        dataset = load_dataset("livecodebench/code_generation_lite", version_tag='v5', split='test', trust_remote_code=True)
+        # datasets>=4 no longer runs loading scripts; load the release v5 file
+        # (version_tag='v5' == test5.jsonl) directly with the upstream schema.
+        lcb_features = Features({k: Value("string") for k in (
+            "question_title", "question_content", "platform", "question_id",
+            "contest_id", "contest_date", "starter_code", "difficulty",
+            "public_test_cases", "private_test_cases", "metadata")})
+        dataset = load_dataset("json", data_files="hf://datasets/livecodebench/code_generation_lite/test5.jsonl", features=lcb_features, split="train")
         
         test_data = []
         def prepare_prompt(line: dict[str, Any]) -> str:
